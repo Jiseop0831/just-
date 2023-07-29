@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./script/login.js"></script>
+</head>
+<body>
+    <h1 class="login_h1">로그인</h1>
+    <div class="container">
+
+        <form class="login_form">
+            <input type="text" class="login_id login_input" onchange="id_onchange(this)" placeholder="아이디를 입력하세요">
+
+            <input type="password" class="login_ps login_input" onchange="ps_onchange(this)" placeholder="비밀번호를 입력하세요">
+<!-- <input type="text" class="login_nickname login_input" onchange="_onchange(this)" placeholder="닉네임을 입력하세요"> -->
+            <input type="button" class="login_bt" onclick="sign_in_button()" value="로그인">
+            <a href="./join.html" class="login_join">회원가입</a>
+        </form>
+
+    </div>
+
+    <div class="name_container">
+
+        <form class="name_form">
+
+            <input type="text" class="name_nickname name_input" onchange="name_onchange(this)" placeholder="닉네임을 입력하세요">
+            <input type="button" class="name_bt" onclick="nickname_in_button()" value="확인">
+        </form>
+
+    </div>  
+    <p class="index">
+        <a href="./index.html">메인 메뉴로</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/join.css">
+    <script src="./script/login.js"></script>
+</head>
+<body>
+    <h1 class="join_h1">회원가입</h1>
+    <div class="container">
+
+        <form class="join_form">
+            <input type="text" class="join_id join_input" onchange="id_onchange(this)" placeholder="사용할 아이디를 입력하세요">
+
+
+            <input type="password" class="join_ps join_input" onchange="ps_onchange(this)" placeholder="사용할 비밀번호를 입력하세요">
+            <input type="password" class="join_ps_test join_input"placeholder="비밀번호 확인">
+
+            <input type="button" class="join_bt" onclick="sign_up_button()" value="회원가입">
+            <a href="./login.html" class="join_login">로그인</a>
+        </form>
+
+    </div>
+    <p class="index">
+        <a href="./index.html">메인 메뉴로</a>
+    </p>
+</body>
+</html>

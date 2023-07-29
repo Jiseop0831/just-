@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.login_h1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.login_form {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login_input {
+    width: 450px;
+    height:40px;
+    margin-top: 40px;
+    font-size: 20px;
+    border: transparent;
+    border-bottom: 2px solid gray;
+    border-radius: 5px;
+}
+
+.login_input:hover,.login_input:focus {
+    background-color: rgba(190, 190, 190, 0.678);
+}
+
+.login_bt {
+    position: absolute;
+    top: 85%;
+    left: 71%;
+    width: 100px;
+    height: 40px;
+    border: 1px solid gray;
+    font-size: 18px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.login_bt:hover {
+    background-color: gray;
+    color: azure;
+    cursor: pointer;
+}
+
+.login_join {
+    position: absolute;
+    top: 85%;
+    right: 75%;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    border: transparent; 
+    border-bottom: 2px solid gray;
+    line-height: 40px;
+}
+
+.index {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+
+.name_container {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.name_h1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.name_form {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.name_input {
+    width: 450px;
+    height:40px;
+    margin-top: 0 auto;
+    margin-top: 40px;
+    font-size: 20px;
+    border: transparent;
+    border-bottom: 2px solid gray;
+    border-radius: 5px;
+}
+
+.name_input:hover,.name_input:focus {
+    background-color: rgba(190, 190, 190, 0.678);
+}
+
+.name_bt {
+    position: absolute;
+    top: 65%;
+    left: 71%;
+    width: 100px;
+    height: 40px;
+    border: 1px solid gray;
+    font-size: 18px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.name_bt:hover {
+    background-color: gray;
+    color: azure;
+    cursor: pointer;
+}
+
+.name_join {
+    position: absolute;
+    top: 85%;
+    right: 75%;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    border: transparent; 
+    border-bottom: 2px solid gray;
+    line-height: 40px;
+}
+
+.index {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    font-size: 20px;
+}

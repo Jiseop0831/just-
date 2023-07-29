@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .body {
+    height: 100vh;
+    background-image: url(../img/배경.jfif);
+    background-size: cover;
+  }
+
+  .menu {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .container {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 110%;
+    z-index: 10;
+    background-color: white;
+  }
+
+  .testblock {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(44, 43, 43, 0.938);
+  }
+  
+  
+/************메인*****************/
+
+.potpolio {
+  width: 400px;
+
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.potpolio > ul {
+  display: block;
+  flex-wrap: wrap;
+}
+
+.potpolio > ul > li {
+  margin: 0 auto;
+  width: 220px;
+  height: 50px;
+  margin-top: 75px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.potpolio a {
+  font-size: 2rem;
+}
+
+.main_site a{
+  font-size: 1.6rem;
+  line-height: 45px;
+}
+
+.potpolio > ul > li:hover {
+  opacity: 60%;
+}
+
+.potpolio p {
+  height: 0;
+  overflow: hidden;
+}
+
+span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/************메인*****************/
+
+.modal_inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  background-color: rgba(158, 158, 158, 0.5);
+  display: none;
+}
+
+.modal {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  z-index: 20;
+  /* opacity: 1; */
+  text-align: center;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.modal h2{
+  padding: 10px;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+
+.modal h3 {
+  padding: 5px;
+}
+
+.modal p {
+  padding: 10px;
+}
+
+.modal button {
+  width: 50px;
+  height: 40px;
+  float: right;
+  font-size: 1.2rem;
+  font-weight: 600;
+  top: 10;
+}
+#one p {
+  font-size: 0.85rem;
+}
+
+#one h3 {
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+}
+
+.close_modal1 {
+  margin-bottom: 20px;
+}
+
+/******************open_modal*********************/
+
+.open_modal5 a {
+  font-size: 28px;
+  line-height: 45px;
+}
+
+/******************open_modal*********************/
+
+#one {
+  background-color: rgb(255, 248, 151);
+  opacity: 1;
+  display: none;
+}
+
+#two {
+  background-color: greenyellow;
+  opacity: 1;
+  display: none;
+}
+
+#three {
+  background-color: rgb(231, 103, 128);
+  opacity: 1;
+  display: none;
+}
+
+#four {
+  background-color: rgb(141, 255, 240);
+  opacity: 1;
+  display: none;
+}
+
+#four p {
+  font-size: 0.9rem;
+}
+
+#five {
+  background-color: rgb(219, 141, 255);
+  opacity: 1;
+  display: none;
+}
+
+#four button {
+  margin-bottom: 20px;
+}
+
+#five button {
+  margin-bottom: 20px;
+}
+
+/*****************애니메이션1********************/
+
+.modal_open:hover {
+  animation: bottom_down 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bottom_down {
+  0% {
+    height: 50px;
+  }
+
+  100% {
+    height: 200px;
+  }
+}
+
+.modal_open:not(hover) {
+  animation: bottom_up 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bottom_up {
+  0% {
+    height: 200px;
+  }
+
+  100% {
+    height: 50px;
+  }
+}
+
+/*****************애니메이션1********************/
+
+
+/*****************애니메이션2********************/
+
+.modal_open:hover p {
+  animation: down_p 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes down_p {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 130px;
+  }
+}
+
+.modal_open:not(hover) p {
+  animation: up_p 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes up_p {
+  0% {
+    height: 130px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+
+/*****************애니메이션2********************/
+
+/********************배경 화면*************************/
+
+.background {
+  width: 500px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#back {
+  width: 200px;
+  border: 3px solid black;
+  text-align: center;
+  margin-top: 0 auto;
+}
+
+#back:hover {
+  opacity: 40%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .background {
+    animation: non 0.3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes non {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+}
+
+@media screen and (min-width: 601px) {
+  .background {
+    animation: opnon 0.3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes opnon {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+}
+
+.github:hover {
+  opacity: 50%;
+}
